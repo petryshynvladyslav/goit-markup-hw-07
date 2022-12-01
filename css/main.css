@@ -74,7 +74,7 @@ img {
   border-radius: 4px;
 }
 
-.button-secondary {
+.portfolio__btn {
   display: inline-block;
   min-height: 38px;
   padding: 5px 21px;
@@ -94,7 +94,7 @@ img {
   transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast);
   transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
 }
-.button-secondary:focus, .button-secondary:hover {
+.portfolio__btn:focus, .portfolio__btn:hover {
   color: #ffffff;
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -102,7 +102,7 @@ img {
   border-radius: 4px;
 }
 
-.section {
+.portfolio, .client, .team, .work, .solution {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -115,7 +115,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1600px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -408,7 +407,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.teammate__name {
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -418,7 +417,7 @@ img {
   color: var(--main-text-color);
 }
 
-.teammate__profession {
+.team__position {
   padding-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
@@ -427,12 +426,12 @@ img {
   color: var(--secondary-text-color);
 }
 
-.teammate__card {
+.team__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.clients {
+.client__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,7 +755,7 @@ img {
           transform: translateY(0);
 }
 
-.flex-btn-secondary {
+.portolio__flex__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,5 +1,5 @@
 .team {
-   
+    @extend %section;
     background-color: #f5f4fa;
 
 }
@@ -26,7 +26,7 @@
 
 }
 
-.teammate__name {
+.team__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -36,7 +36,7 @@
     color: var(--main-text-color);
 }
 
-.teammate__profession {
+.team__position {
     padding-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
@@ -45,7 +45,7 @@
     color: var(--secondary-text-color);
 }
 
-.teammate__card {
+.team__wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
 }

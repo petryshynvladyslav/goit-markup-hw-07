@@ -1,4 +1,8 @@
-.clients {
+.client {
+    @extend %section;
+}
+
+.client__wrapper {
     display: flex;
     text-align: center;
     justify-content: center;
