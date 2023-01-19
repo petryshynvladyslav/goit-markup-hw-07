@@ -286,7 +286,7 @@ img {
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -454,10 +454,10 @@ img {
           align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: #ffffff;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   -webkit-transition: fill var(--anim-fast), border-color var(--anim-fast);
   transition: fill var(--anim-fast), border-color var(--anim-fast);
 }
