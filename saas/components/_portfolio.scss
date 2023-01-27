@@ -27,6 +27,7 @@
 }
 
 .portfolio__item {
+  width: 396px;
   margin-bottom: 48px;
   transition: box-shadow var(--anim-fast);
 
@@ -37,12 +38,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 45%;
+    width: 356px;
     margin-right: 24px;
     margin-bottom: 72px;
   }
   @media screen and (min-width: 1440px) {
-    width: 30%;
+    width: 360px;
     margin-bottom: 48px;
   }
 
@@ -95,14 +96,19 @@
 }
 
 .portolio__flex__btn {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 72px;
+  }
 }
 .portfolio__btn {
   display: inline-block;
-  min-height: 38px;
+  min-height: 40px;
   padding: 5px 21px;
   color: #4d5ae5;
   background-color: #f4f4fd;

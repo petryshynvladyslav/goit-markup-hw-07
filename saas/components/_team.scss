@@ -15,7 +15,12 @@
 
 .team__container {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+  }
 }
 
 .team__card {
@@ -23,6 +28,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  // margin-bottom: 72px;
 }
 
 .team__name {
