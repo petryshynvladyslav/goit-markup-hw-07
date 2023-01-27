@@ -1,6 +1,6 @@
 .work__list {
   display: flex;
-  gap: 30px;
+  gap: 24px;
 }
 
 .work__thumb {
@@ -49,4 +49,9 @@
 .work {
   @extend %section;
   padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
