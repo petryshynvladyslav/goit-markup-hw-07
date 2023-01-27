@@ -1,9 +1,8 @@
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -26,10 +25,14 @@
 }
 
 .hero__title {
-  margin-bottom: 30px;
+  margin-bottom: 72px;
   font-weight: 700;
   color: var(--main-title-color);
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+  }
 }

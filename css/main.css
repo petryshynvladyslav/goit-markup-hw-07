@@ -47,26 +47,20 @@ img {
 }
 
 .container {
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 428px) {
-  .container {
-    width: 428px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
+    max-width: 1440px;
   }
 }
 
@@ -238,10 +232,9 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url(/images/hero.jpg);
@@ -259,19 +252,28 @@ img {
 }
 
 .hero__title {
-  margin-bottom: 30px;
+  margin-bottom: 72px;
   font-weight: 700;
   color: var(--main-title-color);
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 56px;
+  }
+}
 
-.solution__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 1440px) {
+  .solution__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .solution__item::before {
@@ -284,21 +286,40 @@ img {
   border-radius: 4px;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 1439px) {
+  .solution__item::before {
+    display: none;
+  }
+}
 
 .solution__list {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .solution__list {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .solution__list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
 }
 
 .solution__text {
-  width: 264px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 .icon-antena::before {
@@ -322,6 +343,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .work__thumb {
