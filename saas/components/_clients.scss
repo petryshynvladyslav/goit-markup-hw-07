@@ -4,22 +4,35 @@
 
 .client__wrapper {
   display: flex;
+  flex-wrap: wrap;
+
   text-align: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+  }
 }
 
 .client__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  width: 190px;
+
+  margin-bottom: 56px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #ffffff;
   fill: #8e8f99;
   transition: fill var(--anim-fast), border-color var(--anim-fast);
+
+  @media screen and (min-width: 768px) {
+    width: 168px;
+    margin-bottom: 48px;
+  }
 
   &:hover,
   &:focus {
