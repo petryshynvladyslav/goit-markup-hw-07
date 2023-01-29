@@ -4,12 +4,12 @@
 
 .solution__container {
   @media screen and (min-width: 768px) {
-    // display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    gap: 24px;
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
 }
@@ -24,8 +24,14 @@
   border-radius: 4px;
   margin-bottom: 8px;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1199px) {
     display: none;
+  }
+}
+
+.solution__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -41,7 +47,7 @@
     text-align: left;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
