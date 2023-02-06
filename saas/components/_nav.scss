@@ -1,8 +1,6 @@
 .nav__list .link {
   position: relative;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 28px;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -22,10 +20,27 @@
   }
 }
 
-.nav__list {
+.nav {
   display: flex;
-  margin-left: 93px;
-  gap: 40px;
+  align-items: baseline;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.nav__list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 123px;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 76px;
+    gap: 40px;
+  }
 }
 
 .nav__link::after {
@@ -53,7 +68,7 @@
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: -120%;
   transform: translateX(-50%);
   display: block;
   width: 100%;

@@ -103,6 +103,7 @@
 }
 
 .footer__form__box {
+  justify-content: left;
   @media screen and (min-width: 1200px) {
     margin-left: 80px;
   }
@@ -119,7 +120,7 @@
   border-radius: 4px;
 
   @media screen and (min-width: 768px) {
-    width: 264px;
+    // width: 264px;
   }
 
   &::placeholder {
