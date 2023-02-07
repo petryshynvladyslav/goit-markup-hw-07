@@ -16,7 +16,7 @@
   }
 }
 
-.menu-open .is-hidden {
+.mob-menu .is-open {
   opacity: 0;
   visibility: visible;
   pointer-events: auto;
@@ -111,4 +111,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+}
+
+.menu-container {
 }
