@@ -15,6 +15,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
   padding: 0;
