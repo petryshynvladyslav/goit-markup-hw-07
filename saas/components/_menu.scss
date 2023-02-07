@@ -7,7 +7,7 @@
   height: 100vh;
   background-color: #fff;
   padding: 40px;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   pointer-events: none;
 
@@ -17,7 +17,7 @@
 }
 
 .mob-menu.is-open {
-  opacity: 1;
+  opacity: 0;
   visibility: visible;
   pointer-events: auto;
 }
@@ -37,7 +37,9 @@
 .menu-open-icon {
   stroke: #2e2f42;
 }
-
+.menu-close {
+  stroke: #000000;
+}
 .menu-close {
   width: 24px;
   height: 24px;
