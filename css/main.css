@@ -1261,11 +1261,20 @@ img {
   height: 100vh;
   background-color: #fff;
   padding: 40px;
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: none;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
+}
+
+.menu-open .is-hidden {
+  opacity: 0;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .menu-open {
