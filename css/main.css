@@ -1384,7 +1384,7 @@ img {
   fill: #ffffff;
 }
 
-.mob-menu-pos {
+.mob-menu > .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
