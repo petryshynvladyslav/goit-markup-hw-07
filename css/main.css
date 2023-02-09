@@ -887,7 +887,6 @@ img {
 }
 
 .portfolio__item {
-  width: 396px;
   margin-bottom: 48px;
   -webkit-transition: -webkit-box-shadow var(--anim-fast);
   transition: -webkit-box-shadow var(--anim-fast);
@@ -1265,7 +1264,7 @@ img {
   height: 100vh;
   background-color: #fff;
   padding: 40px;
-  opacity: 1;
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
@@ -1276,9 +1275,9 @@ img {
 }
 
 .mob-menu.is-open {
-  opacity: 0;
+  opacity: 1;
   visibility: visible;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .menu-open {
@@ -1384,7 +1383,7 @@ img {
   fill: #ffffff;
 }
 
-.mob-menu > .container {
+.mob-menu.container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
