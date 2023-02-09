@@ -19,7 +19,7 @@
 .mob-menu.is-open {
   opacity: 1;
   visibility: visible;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .menu-open {
@@ -113,4 +113,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+}
+
+.mob-menu-bottom {
 }
