@@ -113,7 +113,5 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
-}
-
-.mob-menu-bottom {
+  max-width: 768px;
 }

@@ -8,10 +8,11 @@
 
   text-align: center;
   justify-content: center;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 72px;
 
   @media screen and (min-width: 768px) {
-    gap: 24px;
+    column-gap: 24px;
   }
 }
 
@@ -20,8 +21,6 @@
   justify-content: center;
   align-items: center;
   width: 190px;
-
-  margin-bottom: 56px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -31,7 +30,6 @@
 
   @media screen and (min-width: 768px) {
     width: 168px;
-    margin-bottom: 48px;
   }
 
   &:hover,
